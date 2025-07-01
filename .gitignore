@@ -1,0 +1,22 @@
+# macOS system files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Node.js dependencies (if used)
+node_modules/
+
+# Log files
+*.log
+
+# Build output (optional, if you have a build step)
+dist/
+build/
+
+# Environment variables (optional)
+.env
+
+# Temp files
+*.tmp
+*.swp
