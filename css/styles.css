@@ -1,0 +1,55 @@
+/* Global Style */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --purple: #3d3998;
+    --green: #00dfa9;
+}
+
+a {
+    color: var(--purple);
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+/* Global Classes */
+.glbl-lateral-padding {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.glbl-top-margin {
+    margin-top: 62px;
+}
+
+.glbl-bottom-margin {
+    margin-bottom: 52px;
+}
+
+/* Top Navbar */
+#topNavbar {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#topNavbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    height: 40px;
+}
