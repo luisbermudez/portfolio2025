@@ -50,13 +50,13 @@ p {
 
 .projects-btn {
     border: none;
-    border-radius: 6px;
+    border-radius: 4px;
     padding: 3px 10px;
     color: white;
     font-size: 0.88rem;
     font-weight: 400;
     text-decoration: none;
-    background-color: var(--blue-2);
+    background-color: var(--purple-2);
 }
 
 .projects-link {
@@ -96,7 +96,7 @@ p {
     list-style: none;
     border-top: 1px solid #e7e7e7;
     display: flex;
-    padding: 0.2rem 0 0.2rem 0;
+    padding: 6px 0 6px 0;
 }
 
 #contact ul li {
