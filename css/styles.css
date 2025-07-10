@@ -18,6 +18,13 @@
 a {
     color: var(--purple-2);
     font-weight: 400;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+a:hover {
+    background-color: #3c45a51c;
+    border-radius: 3px;
+    border-bottom: 2px solid var(--purple-2);
 }
 
 h1,
@@ -29,7 +36,8 @@ h6 {
     font-weight: 700;
 }
 
-p {
+p,
+ul {
     color: black;
     font-weight: 200;
 }
@@ -44,6 +52,22 @@ p {
     margin-top: 62px;
 }
 
+.glbl-small-bottom-margin {
+    margin-bottom: 22px;
+}
+
+.glbl-medium-bottom-margin {
+    margin-bottom: 38px;
+}
+
+.glbl-large-bottom-margin {
+    margin-bottom: 54px;
+}
+
+.glbl-xlarge-bottom-margin {
+    margin-bottom: 62px;
+}
+
 .glbl-bottom-margin {
     margin-bottom: 52px;
 }
@@ -56,7 +80,7 @@ p {
     font-size: 0.94rem;
     font-weight: 400;
     text-decoration: none;
-    background-color: var(--purple-2);
+    background-color: black;
 }
 
 .projects-link {
