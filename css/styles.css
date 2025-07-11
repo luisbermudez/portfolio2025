@@ -111,7 +111,8 @@ ul {
 #home-main-div main {
     flex-grow: 1;
     display: flex;
-    margin-top: 32dvh;
+    align-items: center;
+    padding-bottom: 40px;
 }
 
 /* Contact/Footer */
