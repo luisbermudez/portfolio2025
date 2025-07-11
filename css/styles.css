@@ -22,8 +22,6 @@ a {
     border-bottom: 2px solid transparent;
 }
 a:hover {
-    background-color: #3c45a51c;
-    border-radius: 3px;
     border-bottom: 2px solid var(--purple-2);
 }
 
@@ -106,13 +104,14 @@ ul {
 #home-main-div {
     display: flex;
     flex-direction: column;
+    min-height: 587px;
     height: calc(100dvh - 40px);
 }
 
 #home-main-div main {
     flex-grow: 1;
     display: flex;
-    margin-top: 32vh;
+    margin-top: 32dvh;
 }
 
 /* Contact/Footer */
