@@ -11,12 +11,12 @@
 </head>
 
 <body>
-    <header>
+    <header class="main-top-nav">
 
         <nav id="topNavbar" class="glbl-lateral-padding">
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./projects.html">Projects</a></li>
+                <!-- <li><a href="./projects.html">Projects</a></li> -->
             </ul>
         </nav>
 
@@ -25,19 +25,20 @@
     <main class="glbl-lateral-padding glbl-top-margin">
 
         <div class="glbl-xlarge-bottom-margin">
-            <h1>Admissions</h1>
-            <a href="https://portalapps.weber.edu/admissions/">Visit the Admissions platform</a>
+            <h1 class="blog-uppercased-title">Admissions</h1>
+            <a target="_blank" href="https://portalapps.weber.edu/admissions/">Visit the Admissions platform</a>
         </div>
 
         <section class="glbl-large-bottom-margin">
-            <h2>A quick summary about this project</h2>
-            <p>Admissions is a platform for students to apply to selected graduate programs and for admissions staff to manage the applicants pool.</p>
+            <h2 class="blog-large-title">A quick summary about this project</h2>
+            <p class="fade-up">Admissions is a platform for students to apply to selected graduate programs and for admissions staff to manage the applicants pool.</p>
         </section>
 
         <section class="glbl-large-bottom-margin">
-            <h2>Techonlogies used</h2>
+            <h2 class="blog-large-title">Technologies</h2>
             <ul>
                 <li>ASP.NET Web forms + C#</li>
+                <li>IIS</li>
                 <li>SQL</li>
                 <li>JavaScript</li>
                 <li>Telerik</li>
@@ -48,27 +49,23 @@
         </section>
 
         <section class="glbl-large-bottom-margin">
-            <h2>What is this project for?</h2>
-            <p>The purpose of this project is to streamline the process of applying to a graduate program while giving the admissions staff a set of tools that makes their daily tasks more efficient and easier.</p>
+            <h2 class="blog-large-title">What problems is this project solving?</h2>
+            <p class="fade-up">This system provides a mean of communication between the applicants, admissions and other deparments involved in the process of matriculating new students.</p>
+            <p class="fade-up">The purpose of this project is to streamline the process of applying to a graduate program while giving the admissions staff a set of tools that makes their daily tasks more efficient and easier.</p>
         </section>
 
         <section class="glbl-large-bottom-margin">
-            <h2>What problems is this project solving</h2>
-            <p>This system provides a mean of communication between the applicants, admissions and other deparments involved in the process of matriculating new students.</p>
-        </section>
-
-        <section class="glbl-large-bottom-margin">
-            <h2>Applicant portal</h2>
+            <h2 class="blog-large-title">Applicant Portal</h2>
             <p>List all the tools the applicant portal has.</p>
         </section>
 
         <section class="glbl-large-bottom-margin">
-            <h2>Administrative portal</h2>
+            <h2 class="blog-large-title">Admin Portal</h2>
             <p>List of tools the admin side has.</p>
         </section>
 
         <section class="glbl-large-bottom-margin">
-            <h2>Code to showcase</h2>
+            <h2 class="blog-large-title">Code to showcase</h2>
             <ul>
                 <li>Touchnet integration</li>
                 <li>Search</li>
@@ -87,6 +84,22 @@
 
     <!-- Boostrap -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            root: null,
+            rootMargin: '0px 0px -6% 0px',
+        });
+
+        document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));
+    </script>
+
 </body>
 
 </html>

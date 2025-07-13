@@ -10,9 +10,16 @@
     --purple-2: #3c45a5;
     --green: #00dfa9;
     --green-2: #00deb0;
+    --green-3: #127578;
     --blue: #396da7;
     --blue-2: #267ff3;
     --blue-3: #2071da;
+    --topbar-height: 54px;
+}
+
+body {
+    position: relative;
+    background-color: #f8f8f8;
 }
 
 a {
@@ -59,7 +66,7 @@ ul {
 }
 
 .glbl-large-bottom-margin {
-    margin-bottom: 54px;
+    margin-bottom: 58px;
 }
 
 .glbl-xlarge-bottom-margin {
@@ -85,9 +92,54 @@ ul {
     color: var(--purple-2);
 }
 
+.blog-large-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #242424;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    line-height: 3.6rem;
+    margin-bottom: 2rem;
+}
+
+.blog-uppercased-title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.14rem;
+    font-weight: 600;
+}
+
 /* Top Navbar */
-#topNavbar ul {
-    border-bottom: 1px solid #e7e7e7;
+header.main-top-nav {
+    position: sticky;
+    top: 0;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: white;
+    z-index: 1000;
+}
+
+#topNavbar a[href="./index.html"] {
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+}
+#topNavbar a[href="./index.html"]:hover {
+    border: none;
+}
+
+#topNavbar a[href="./projects.html"] {
+    border: none;
+    border-radius: 14px;
+    padding: 10px 16px;
+    color: white;
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: black;
+}
+#topNavbar a[href="./projects.html"]:hover {
+    border: none;
 }
 
 #topNavbar ul {
@@ -95,24 +147,24 @@ ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 12px;
     align-items: center;
-    height: 40px;
+    height: var(--topbar-height);
+    justify-content: space-between;
 }
 
 /* Home Main */
 #home-main-div {
     display: flex;
     flex-direction: column;
-    min-height: 587px;
-    height: calc(100dvh - 40px);
+    min-height: 500px;
+    height: calc(100dvh - var(--topbar-height));
 }
 
 #home-main-div main {
     flex-grow: 1;
     display: flex;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: var(--topbar-height);
 }
 
 /* Contact/Footer */
@@ -137,4 +189,16 @@ ul {
     font-size: 0.8rem;
     margin-left: 2px;
     margin-right: 8px;
+}
+
+/* Text Animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
