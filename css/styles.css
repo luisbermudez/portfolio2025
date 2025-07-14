@@ -17,13 +17,15 @@
     --topbar-height: 54px;
 }
 
-html {
+html,
+body {
     background-color: white;
 }
 
-body {
+.page-content {
     position: relative;
     background-color: #f8f8f8;
+    padding-bottom: 58px;
 }
 
 a {
