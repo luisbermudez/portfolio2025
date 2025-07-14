@@ -17,6 +17,10 @@
     --topbar-height: 54px;
 }
 
+html {
+    background-color: white;
+}
+
 body {
     position: relative;
     background-color: #f8f8f8;
