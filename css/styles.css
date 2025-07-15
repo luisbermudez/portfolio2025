@@ -37,13 +37,17 @@ body {
 }
 
 a {
-    color: var(--purple-2);
+    color: black;
     font-weight: 400;
     text-decoration: none;
     border-bottom: 2px solid transparent;
 }
 a:hover {
-    border-bottom: 2px solid var(--purple-2);
+    border-bottom: 2px solid black;
+}
+
+a svg {
+    height: 12px;
 }
 
 h1,
@@ -127,16 +131,17 @@ ul {
 header.main-top-nav {
     position: sticky;
     top: 0;
-    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     background-color: white;
     z-index: 1000;
 }
 
 #topNavbar a[href="./index.html"] {
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 900;
+    font-size: 1.1rem;
     color: black;
+    font-style: italic;
+    text-transform: uppercase;
 }
 #topNavbar a[href="./index.html"]:hover {
     border: none;
@@ -145,7 +150,7 @@ header.main-top-nav {
 #topNavbar a[href="./projects.html"] {
     border: none;
     border-radius: 14px;
-    padding: 10px 16px;
+    padding: 10px 14px;
     color: white;
     font-size: 0.92rem;
     font-weight: 600;
