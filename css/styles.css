@@ -181,8 +181,14 @@ header.main-top-nav {
     gap: 8px;
 }
 
-#topNavbar .project-links-navbar a[href="./projects.html"],
-#topNavbar .project-links-navbar a {
+/* #topNavbar .project-links-navbar a {    
+    background-color: #d4fbe3;
+    background-color: #2e3440;
+    color: black;
+    color: #d8dee9;
+} */
+#topNavbar .project-links-navbar a,
+#topNavbar .project-links-navbar a[href="./projects.html"] {
     background-color: #f2f2f2;
     color: black;
 }
@@ -282,4 +288,9 @@ header.main-top-nav {
     font-size: 3.2rem;
     font-weight: 800;
     color: #242424;
+}
+
+/* Code showcase */
+pre {
+    border-radius: 10px;
 }

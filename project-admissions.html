@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/interfontface.css" />
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/tokyo-night-dark.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/nord.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/night-owl.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/grayscale.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/googlecode.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css"> -->
+
     <title>Admissions</title>
 </head>
 
@@ -16,7 +24,7 @@
 
             <nav id="topNavbar" class="glbl-lateral-padding">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html">Luis</a></li>
                     <div class="project-links-navbar">
                         <li><a href="./projects.html">Projects</a></li>
                         <li><a href="./project-gateway-api.html">Next Project</a></li>
@@ -89,6 +97,88 @@
                 </ul>
             </section>
 
+            <section class="glbl-large-bottom-margin">
+                <h2 class="blog-large-title">Code Sample: JavaScript</h2>
+                <pre><code>const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    root: null,
+    rootMargin: '0px 0px -6% 0px',
+});
+
+document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));</code></pre>
+            </section>
+
+            <section class="glbl-large-bottom-margin">
+                <h2 class="blog-large-title">Code Sample: HTML</h2>
+                <pre><code>&lt;nav id="topNavbar" class="glbl-lateral-padding"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="./index.html"&gt;Luis&lt;/a&gt;&lt;/li&gt;
+        &lt;div class="project-links-navbar"&gt;
+            &lt;li&gt;&lt;a href="./projects.html"&gt;Projects&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="./project-gateway-api.html"&gt;Next Project&lt;/a&gt;&lt;/li&gt;
+        &lt;/div&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+            </section>
+
+            <section class="glbl-large-bottom-margin">
+                <h2 class="blog-large-title">Code Sample: C#</h2>
+                <pre><code>using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("Hello, C#!");
+    }
+}</code></pre>
+            </section>
+
+            <section class="glbl-large-bottom-margin">
+                <h2 class="blog-large-title">Code Sample: VB</h2>
+                <pre><code>Module Program
+    Sub Main()
+        Console.WriteLine("Hello, VB.NET!")
+    End Sub
+End Module</code></pre>
+            </section>
+
+            <section class="glbl-large-bottom-margin">
+                <h2 class="blog-large-title">Code Sample: SQL</h2>
+                <pre><code>SELECT FirstName, LastName
+FROM Employees
+WHERE Department = 'Sales'
+ORDER BY LastName;</code></pre>
+            </section>
+
+            <section class="glbl-large-bottom-margin">
+                <h2 class="blog-large-title">Code Sample: SASS</h2>
+                <pre><code>$primary-color: #3498db;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+
+  h1 {
+    color: $primary-color;
+    font-size: 2rem;
+  }
+
+  a {
+    color: darken($primary-color, 10%);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}</code></pre>
+            </section>
+
         </main>
     </div>
 
@@ -98,6 +188,10 @@
 
     <!-- Boostrap -->
     <script src="./js/bootstrap.bundle.min.js"></script>    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
 
 </body>
 
