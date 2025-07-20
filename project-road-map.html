@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/interfontface.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/night-owl.min.css">
+    
     <title>Road Map</title>
 </head>
 
@@ -32,6 +35,89 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24l94.1 0L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135L288 328c0 13.3 10.7 24 24 24s24-10.7 24-24l0-160c0-13.3-10.7-24-24-24l-152 0z"/></svg>
                 Visit the Roadmap platform
             </a>
+
+                        <section class="glbl-large-bottom-margin">
+                <h2 class="blog-large-title">Code Sample: JavaScript</h2>
+                <pre><code>const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    root: null,
+    rootMargin: '0px 0px -6% 0px',
+});
+
+document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));</code></pre>
+            </section>
+
+            <section class="glbl-large-bottom-margin">
+                <h2 class="blog-large-title">Code Sample: HTML</h2>
+                <pre><code>&lt;nav id="topNavbar" class="glbl-lateral-padding"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="./index.html"&gt;Luis&lt;/a&gt;&lt;/li&gt;
+        &lt;div class="project-links-navbar"&gt;
+            &lt;li&gt;&lt;a href="./projects.html"&gt;Projects&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="./project-gateway-api.html"&gt;Next Project&lt;/a&gt;&lt;/li&gt;
+        &lt;/div&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+            </section>
+
+            <section class="glbl-large-bottom-margin">
+                <h2 class="blog-large-title">Code Sample: C#</h2>
+                <pre><code>using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("Hello, C#!");
+    }
+}</code></pre>
+            </section>
+
+            <section class="glbl-large-bottom-margin">
+                <h2 class="blog-large-title">Code Sample: VB</h2>
+                <pre><code>Module Program
+    Sub Main()
+        Console.WriteLine("Hello, VB.NET!")
+    End Sub
+End Module</code></pre>
+            </section>
+
+            <section class="glbl-large-bottom-margin">
+                <h2 class="blog-large-title">Code Sample: SQL</h2>
+                <pre><code>SELECT FirstName, LastName
+FROM Employees
+WHERE Department = 'Sales'
+ORDER BY LastName;</code></pre>
+            </section>
+
+            <section class="glbl-large-bottom-margin">
+                <h2 class="blog-large-title">Code Sample: SASS</h2>
+                <pre><code>$primary-color: #3498db;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+
+  h1 {
+    color: $primary-color;
+    font-size: 2rem;
+  }
+
+  a {
+    color: darken($primary-color, 10%);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}</code></pre>
+            </section>
+
         </main>
     </div>
 
@@ -41,6 +127,10 @@
 
     <!-- Boostrap -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
 </body>
 
 </html>
