@@ -205,7 +205,6 @@ header.main-top-nav {
 /* Contact/Footer */
 #contact ul {
     list-style: none;
-    border-top: 1px solid #e7e7e7;
     display: flex;
     padding: 10px 0 10px 0;
     margin: 0;
@@ -220,7 +219,7 @@ header.main-top-nav {
 }
 
 #contact ul span {
-    color: var(--purple-2);
+    color: black;
     font-size: 0.8rem;
     margin-left: 2px;
     margin-right: 8px;
