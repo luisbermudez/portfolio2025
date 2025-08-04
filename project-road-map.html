@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/interfontface.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/night-owl.min.css">
+    <link rel="stylesheet" href="./css/night-owl.min.css" />
     
     <title>Road Map</title>
 </head>
@@ -17,7 +16,7 @@
     <div class="page-content">
         <header class="main-top-nav">
 
-            <nav id="topNavbar" class="glbl-lateral-padding">
+            <nav id="topNavbar" class="glbl-max-width glbl-lateral-padding">
                 <ul>
                     <li><a href="./index.html">Luis</a></li>
                     <div class="project-links-navbar">
@@ -28,17 +27,18 @@
 
         </header>
 
-        <main class="glbl-lateral-padding glbl-top-margin">
+        <main class="glbl-max-width glbl-lateral-padding glbl-top-padding glbl-large-bottom-padding">
 
-            <h1 class="blog-uppercased-title">Road Map</h1>
-            <a target="_blank" href="https://portalapps.weber.edu/admissions/">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 32c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0zM160 144c-13.3 0-24 10.7-24 24s10.7 24 24 24l94.1 0L119 327c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l135-135L288 328c0 13.3 10.7 24 24 24s24-10.7 24-24l0-160c0-13.3-10.7-24-24-24l-152 0z"/></svg>
-                Visit the Roadmap platform
-            </a>
+            <div class="glbl-xlarge-bottom-margin">
+                <h1 class="blog-uppercased-title">Road Map</h1>
+                <a target="_blank" href="https://portalapps.weber.edu/admissions/">                
+                    Visit the Roadmap platform
+                </a>
+            </div>            
 
-                        <section class="glbl-large-bottom-margin">
+            <section class="glbl-large-bottom-margin">
                 <h2 class="blog-large-title">Code Sample: JavaScript</h2>
-                <pre><code>const observer = new IntersectionObserver((entries) => {
+                <pre style="visibility: hidden;"><code class="language-javascript">const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
@@ -55,7 +55,7 @@ document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));</co
 
             <section class="glbl-large-bottom-margin">
                 <h2 class="blog-large-title">Code Sample: HTML</h2>
-                <pre><code>&lt;nav id="topNavbar" class="glbl-lateral-padding"&gt;
+                <pre style="visibility: hidden;"><code class="language-html">&lt;nav id="topNavbar" class="glbl-lateral-padding"&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href="./index.html"&gt;Luis&lt;/a&gt;&lt;/li&gt;
         &lt;div class="project-links-navbar"&gt;
@@ -68,7 +68,7 @@ document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));</co
 
             <section class="glbl-large-bottom-margin">
                 <h2 class="blog-large-title">Code Sample: C#</h2>
-                <pre><code>using System;
+                <pre style="visibility: hidden;"><code>using System;
 
 class Program {
     static void Main() {
@@ -79,7 +79,7 @@ class Program {
 
             <section class="glbl-large-bottom-margin">
                 <h2 class="blog-large-title">Code Sample: VB</h2>
-                <pre><code>Module Program
+                <pre style="visibility: hidden;"><code class="language-vbnet">Module Program
     Sub Main()
         Console.WriteLine("Hello, VB.NET!")
     End Sub
@@ -88,7 +88,7 @@ End Module</code></pre>
 
             <section class="glbl-large-bottom-margin">
                 <h2 class="blog-large-title">Code Sample: SQL</h2>
-                <pre><code>SELECT FirstName, LastName
+                <pre style="visibility: hidden;"><code class="language-sql">SELECT FirstName, LastName
 FROM Employees
 WHERE Department = 'Sales'
 ORDER BY LastName;</code></pre>
@@ -96,7 +96,7 @@ ORDER BY LastName;</code></pre>
 
             <section class="glbl-large-bottom-margin">
                 <h2 class="blog-large-title">Code Sample: SASS</h2>
-                <pre><code>$primary-color: #3498db;
+                <pre style="visibility: hidden;"><code class="language-scss">$primary-color: #3498db;
 
 body {
   font-family: Arial, sans-serif;
@@ -118,6 +118,19 @@ body {
 }</code></pre>
             </section>
 
+            <footer class="proj-footer">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://portalapps.weber.edu/admissions/">                
+                            Visit the Roadmap platform
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./projects.html">All Projects</a>
+                    </li>
+                </ul>                                
+            </footer>
+
         </main>
     </div>
 
@@ -128,9 +141,17 @@ body {
     <!-- Boostrap -->
     <script src="./js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <script src="./js/highlight.min.js"></script>
 
-    <script>hljs.highlightAll();</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            hljs.highlightAll();
+
+            document.querySelectorAll('pre').forEach(e => {
+                e.style.visibility = 'visible';
+            })
+        });
+    </script>
 </body>
 
 </html>
